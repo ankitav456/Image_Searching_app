@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Dancing+Script:wght@700&family=Domine:wght@500&family=Dosis&family=Inconsolata:wght@300&family=Josefin+Sans:wght@200&family=Montserrat:wght@500&family=Noto+Serif&family=Pacifico&family=Space+Grotesk&family=Xanh+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif, 'Inconsolata', monospace, 'Dancing Script', cursive, 'Domine', serif, 'Dosis', 'Space Grotesk';
+}
+
+body {
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 60px;
+}
+
+form {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#search-input {
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: 1.5px solid black;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-size: 18px;
+    color: grey;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: rgb(4, 144, 147);
+    color: white;
+    border: 1.5px solid black;
+    font-size: 18px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.search-results {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.search-result {
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.search-result img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.search-result:hover img {
+    transform: scale(1.5);
+}
+.search-result a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+#show-more-btn{
+    background-color: rgb(4, 82, 56);
+    color: white;
+    padding: 10px 20px;
+    border: 1.5px solid black;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-size: 18px;
+    display: block;
+    display: none;
+    cursor: pointer;
+    text-align: center;
+    margin: 30px auto;
+}
+
+@media screen and (max-width: 768px){
+    .search-result{
+        width: 40%;
+        margin: 10px 20px ;
+        padding: 20px auto;
+    }
+}
+@media screen and (max-width: 584px){
+    .search-result{
+        width: 40%;
+        margin: 10px 20px ;
+        padding: 20px auto;
+    }
+}
+@media screen and (max-width: 368px){
+    .search-result{
+        width: 100%;
+        margin: 10px 20px ;
+        padding: 20px auto;
+        
+    }
+}
+
